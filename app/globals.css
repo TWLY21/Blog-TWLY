@@ -1,0 +1,101 @@
+@import "highlight.js/styles/github.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-bg: 248 246 242;
+  --color-surface: 252 250 246;
+  --color-text: 17 17 17;
+  --color-muted: 85 85 85;
+  --color-border: 221 214 204;
+  --color-accent: 194 168 120;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-bg: 15 15 15;
+  --color-surface: 20 20 20;
+  --color-text: 237 237 237;
+  --color-muted: 160 160 160;
+  --color-border: 42 42 42;
+  --color-accent: 212 163 115;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  @apply bg-bg text-text antialiased;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+a {
+  @apply text-text transition-colors;
+}
+
+a:hover {
+  @apply text-accent;
+}
+
+.prose-article h1,
+.prose-article h2,
+.prose-article h3,
+.prose-article h4 {
+  @apply text-text font-semibold;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  letter-spacing: -0.01em;
+}
+
+.prose-article p,
+.prose-article li {
+  @apply text-muted leading-8;
+}
+
+.prose-article ul {
+  @apply list-disc pl-6;
+}
+
+.prose-article a {
+  @apply text-accent underline underline-offset-4;
+}
+
+.prose-article pre {
+  @apply overflow-x-auto border border-border bg-black/85 p-4 text-sm text-[#f6f6f6] dark:bg-black;
+}
+
+.prose-article :not(pre) > code {
+  @apply bg-black/5 px-1.5 py-0.5 text-[0.9em] text-text dark:bg-white/10;
+}
+
+.toc-link {
+  @apply block border-l border-transparent px-2 py-1 text-sm text-muted transition hover:border-accent hover:text-text;
+}
+
+.toc-link.level-3 {
+  @apply ml-3;
+}
+
+.paper-grid {
+  background-image: linear-gradient(to right, rgba(var(--color-border), 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--color-border), 0.4) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.font-display {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.editorial-divider {
+  border-top: 1px solid rgb(var(--color-border));
+}
