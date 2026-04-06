@@ -10,7 +10,7 @@ const links = [
 export default function Navbar() {
   return (
     <header className="sticky top-3 z-20">
-      <nav className="mx-auto flex max-w-[1680px] items-center justify-between border border-border bg-surface px-4 py-3 md:px-6">
+      <nav className="surface-solid mx-auto flex max-w-[1680px] items-center justify-between border border-border bg-surface px-4 py-3 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <span className="font-display inline-flex h-7 w-7 items-center justify-center border border-border bg-bg text-xs font-bold text-text">
             IT

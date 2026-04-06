@@ -37,7 +37,42 @@ body {
 body {
   @apply bg-bg text-text antialiased;
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image:
+    linear-gradient(to right, rgba(var(--color-border), 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--color-border), 0.3) 1px, transparent 1px),
+    radial-gradient(circle at 12% -10%, rgba(var(--color-accent), 0.12), transparent 42%),
+    radial-gradient(circle at 94% 2%, rgba(var(--color-accent), 0.08), transparent 38%);
+  background-size: 30px 30px, 30px 30px, auto, auto;
+  background-attachment: fixed;
   transition: background-color 200ms ease, color 200ms ease;
+}
+
+.dark body {
+  background-image:
+    linear-gradient(to right, rgba(var(--color-border), 0.34) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--color-border), 0.34) 1px, transparent 1px),
+    radial-gradient(circle at 12% -10%, rgba(var(--color-accent), 0.16), transparent 42%),
+    radial-gradient(circle at 94% 2%, rgba(var(--color-accent), 0.12), transparent 38%);
+}
+
+.bg-surface {
+  background-color: rgba(var(--color-surface), 0.9) !important;
+  background-image:
+    linear-gradient(to right, rgba(var(--color-border), 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--color-border), 0.16) 1px, transparent 1px);
+  background-size: 38px 38px;
+}
+
+.dark .bg-surface {
+  background-color: rgba(var(--color-surface), 0.88) !important;
+  background-image:
+    linear-gradient(to right, rgba(var(--color-border), 0.26) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--color-border), 0.26) 1px, transparent 1px);
+}
+
+.surface-solid {
+  background-color: rgb(var(--color-surface)) !important;
+  background-image: none !important;
 }
 
 a {

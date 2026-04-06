@@ -3,9 +3,15 @@ import Link from "next/link";
 import { getAllPostsMeta } from "@/lib/blog";
 
 const highlights = ["Node.js", "REST APIs", "PostgreSQL", "React", "Playwright", "System Design"];
+const currentFocus = [
+  "Building backend-heavy systems with reliable API boundaries",
+  "Improving Playwright stability and test-data strategy",
+  "Refining editorial UI quality across portfolio projects"
+];
 
 export default function HomePage() {
   const posts = getAllPostsMeta();
+  const latestPost = posts[0];
   const lead = posts[0];
   const secondary = posts.slice(1, 3);
 
@@ -43,6 +49,36 @@ export default function HomePage() {
                   {item}
                 </span>
               ))}
+            </div>
+
+            <div className="mt-8 grid gap-4 lg:grid-cols-[1.05fr_0.95fr]">
+              <article className="border border-border bg-bg p-4">
+                <p className="text-xs uppercase tracking-[0.14em] text-accent">Current Focus</p>
+                <ul className="mt-3 space-y-2">
+                  {currentFocus.map((item) => (
+                    <li key={item} className="border-b border-border pb-2 text-sm text-muted last:border-b-0 last:pb-0">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+
+              {latestPost ? (
+                <Link
+                  href={`/blog/${latestPost.slug}`}
+                  className="group border border-border bg-bg p-4 transition hover:border-accent"
+                >
+                  <p className="text-xs uppercase tracking-[0.14em] text-muted">Latest Article</p>
+                  <p className="mt-2 text-xs uppercase tracking-[0.1em] text-accent">{latestPost.category}</p>
+                  <h2 className="font-display mt-2 text-2xl font-semibold leading-tight text-text transition group-hover:text-accent">
+                    {latestPost.title}
+                  </h2>
+                  <p className="mt-2 text-sm text-muted">{latestPost.excerpt}</p>
+                  <p className="mt-3 text-xs text-muted">
+                    {latestPost.date} | Read now -&gt;
+                  </p>
+                </Link>
+              ) : null}
             </div>
           </div>
 
