@@ -21,8 +21,8 @@ export default function HomePage() {
         <p className="text-xs uppercase tracking-[0.18em] text-muted">Graduate Software Engineer</p>
         <div className="mt-4 grid gap-7 xl:grid-cols-[1.35fr_0.9fr]">
           <div>
-            <h1 className="font-display text-5xl font-semibold leading-[1.05] text-text md:text-6xl">Ives Tan Kian Hang</h1>
-            <p className="mt-4 max-w-4xl text-lg leading-8 text-muted">
+            <h1 className="font-display text-4xl font-semibold leading-[1.07] text-text sm:text-5xl md:text-6xl">Ives Tan Kian Hang</h1>
+            <p className="mt-4 max-w-4xl text-base leading-7 text-muted sm:text-lg sm:leading-8">
               I build practical full-stack products with strong backend foundations, clean architecture, and reliable
               delivery discipline. This site is structured like an editorial publication to document projects and
               implementation notes.

@@ -39,7 +39,7 @@ export default function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      className="border border-border px-3 py-1 text-xs uppercase tracking-[0.08em] text-muted transition hover:border-accent hover:text-accent"
+      className="border border-border px-2.5 py-1 text-[11px] uppercase tracking-[0.08em] text-muted transition hover:border-accent hover:text-accent sm:px-3 sm:text-xs"
       aria-label="Toggle dark mode"
       title="Toggle dark mode"
     >

@@ -73,6 +73,15 @@ body {
 .surface-solid {
   background-color: rgb(var(--color-surface)) !important;
   background-image: none !important;
+  backdrop-filter: none !important;
+  opacity: 1 !important;
+}
+
+.dark .surface-solid {
+  background-color: rgb(var(--color-surface)) !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  opacity: 1 !important;
 }
 
 a {
