@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <section className="space-y-6">
       <header className="paper-grid border border-border bg-surface p-6 md:p-8">
-        <p className="text-xs uppercase tracking-[0.18em] text-muted">Graduate Software Engineer</p>
+        <p className="text-xs uppercase tracking-[0.18em] text-muted">Software Engineer</p>
         <div className="mt-4 grid gap-7 xl:grid-cols-[1.35fr_0.9fr]">
           <div>
             <h1 className="font-display text-4xl font-semibold leading-[1.07] text-text sm:text-5xl md:text-6xl">Ives Tan Kian Hang</h1>

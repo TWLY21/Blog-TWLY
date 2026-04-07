@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 export const metadata: Metadata = {
   title: "Ives Tan Kian Hang | Portfolio + Blog",
   description:
-    "Graduate Software Engineer focused on backend development, Node.js, RESTful APIs, PostgreSQL, automation, and system design."
+    "Software Engineer focused on backend development, Node.js, RESTful APIs, PostgreSQL, automation, and system design."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
