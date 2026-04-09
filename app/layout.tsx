@@ -5,7 +5,12 @@ import Layout from "@/components/Layout";
 export const metadata: Metadata = {
   title: "Ives Tan Kian Hang | Portfolio + Blog",
   description:
-    "Software Engineer focused on backend development, Node.js, RESTful APIs, PostgreSQL, automation, and system design."
+    "Software Engineer focused on backend development, Node.js, RESTful APIs, PostgreSQL, automation, and system design.",
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
