@@ -18,9 +18,9 @@ export const projects: ProjectItem[] = [
     year: "2026",
     title: "Leave Management System",
     description:
-      "Production-oriented leave system with employee/admin workflows, RBAC, data persistence options, and test automation support.",
+      "Production-oriented leave system with employee/admin workflows, RBAC, and a data-driven Playwright automation layer for scalable leave-rule validation.",
     tech: ["Node.js", "Express", "Vue 3", "PostgreSQL", "SQLite", "Playwright", "GitHub Actions"],
-    role: "Designed API modules, role-based flows, testing strategy, and CI-ready structure.",
+    role: "Designed API modules, role-based flows, and a maintainable Playwright framework (fixtures + flows + scenario data) with CI-ready structure.",
     preview: "/covers/cover-1.svg",
     github: "https://github.com/TWLY21/leave-system"
   },
