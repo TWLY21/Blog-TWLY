@@ -1,74 +1,95 @@
 ---
-title: "Internship Lessons: How I Made Playwright Automation More Reliable"
+title: "Internship Reflection: From Manual QA to Playwright Automation"
 date: "2026-04-09"
-updatedAt: "2026-04-09T20:15:00+08:00"
-excerpt: "What changed in my internship automation approach: from fragile scripts to a reusable framework with fixtures, scenario data, and stability-first test design."
+updatedAt: "2026-04-09T22:10:00+08:00"
+excerpt: "A full summary of my internship journey: learning HRMS testing fundamentals, scaling into automation, and building a more maintainable QA workflow."
 author: "Ives Tan Kian Hang"
 category: "Internship Engineering"
 tags:
   - internship
+  - qa
   - playwright
   - test-automation
-  - qa
   - engineering-growth
 cover: "/covers/cover-2.svg"
 draft: false
 ---
 
-# Why this internship project mattered
+# Internship context
 
-During internship, I realized automation quality is not about how many tests we can write quickly.
-It is about whether tests are trustworthy, maintainable, and useful when the team needs confidence before release.
+My internship focused on QA and automation work for HRMS and Payroll-related systems.
+I worked across both Malaysia and Singapore versions, handled manual testing first, and later moved into Playwright automation work.
 
-My target system was the leave request module.
-At first, scenarios were working but repetitive and harder to maintain as requirements changed.
+This post is my final reflection on what I learned and what I delivered.
 
-## The shift I made
+## Phase 1: Manual QA foundation (early weeks)
 
-I moved from case-by-case scripting into a framework-style structure:
+I started with product familiarization and module understanding:
 
-- setup layer for authenticated sessions
-- fixture layer for reusable test context
-- page/component objects for UI responsibilities
-- flow layer for business actions
-- data layer for scalable scenario coverage
+- Leave, Claim, Attendance, Payroll, Approval, and ESS workflows
+- role-based behavior across Employee, Payroll, and Approver perspectives
+- staging vs live environment differences
+- defect tracking and test case documentation standards
 
-This made changes safer because each layer had a clear responsibility.
+I also learned how important clear defect reporting is.
+A defect report is only useful when developers can reproduce it quickly.
 
-## Most important lessons learned
+## Phase 2: Large-volume validation and discipline
 
-### 1. Reliability beats raw test count
+As workload increased, I handled broader functional/regression coverage and defect verification cycles.
+During this phase, I learned to stay systematic under high volume and deployment delays.
 
-A smaller suite with stable selectors and clear assertions is more valuable than many fragile scripts.
-I focused on reducing flakiness and improving signal quality in failures.
+Examples of real execution pressure I had to manage:
 
-### 2. Data-driven tests scale better than copy-paste specs
+- high-volume test execution batches (including 1,428 assigned test sections)
+- repeated retesting after new deployments
+- multilingual UI/translation validation and documentation quality checks
+- balancing progress while waiting for deployment windows
 
-Instead of cloning similar test files, I stored scenarios in data files and looped them in specs.
-That allowed faster extension for both positive and negative leave paths.
+This phase shaped my test discipline and consistency.
 
-### 3. Edge cases should be first-class citizens
+## Phase 3: Transition into automation (Playwright)
 
-I added negative tests that compute over-limit days dynamically from available leave balance.
-This made validation behavior realistic and aligned with business rules.
+After building QA fundamentals, I shifted into automation work.
+I first learned Playwright basics, then applied it to real testing tasks.
 
-### 4. Test architecture is part of engineering quality
+The biggest shift was moving from one-off scripts into structured automation layers:
 
-By separating pages, fixtures, flows, and data, the suite became easier to explain, review, and hand over.
-This structure also supports future additions without major rewrites.
+- setup/auth state handling
+- reusable fixtures
+- page/component responsibilities
+- data-driven scenario coverage
+- cleaner report and summary output
 
-## Practical outcomes
+I also worked on stability and usability improvements for the automation flow, including:
 
-- clearer failure investigation with scenario-based screenshots
-- faster onboarding for others reading the test code
-- lower maintenance overhead when leave logic changes
-- stronger confidence in release readiness
+- better waits and readiness checks
+- clearer command/runbook usage
+- more readable operator logs and failure summaries
+- practical troubleshooting support for team usage
 
-## What I will keep doing next
+## What this internship taught me
 
-- introduce API-assisted setup where possible to speed up and stabilize test preparation
-- continue removing hidden flakiness from waits/selectors
-- keep documentation close to code so handovers stay smooth
+### 1. QA is not only about finding bugs
 
-This internship reinforced one core mindset for me:
-well-structured automation is a product asset, not just a testing script.
+Good QA work means clear communication, reproducible reporting, and strong follow-through in retesting.
+
+### 2. Structure improves speed over time
+
+A maintainable test structure is faster in the long run than repeatedly patching individual scripts.
+
+### 3. Reliability is a product value
+
+Stable tests improve release confidence and reduce noise for developers.
+
+### 4. Engineering growth is incremental
+
+My progress came from repeated cycles: learn, apply, review, refine, and document.
+
+## Final takeaway
+
+This internship helped me grow from manual QA execution into automation-oriented engineering thinking.
+I became more confident in building repeatable testing workflows, communicating issues clearly, and structuring work for long-term maintainability.
+
+The core lesson I will carry forward:
+well-structured quality work is not support activity, it is product delivery work.
