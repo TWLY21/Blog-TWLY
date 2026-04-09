@@ -51,7 +51,7 @@ export default function BlogListClient({ posts }: { posts: BlogPostMeta[] }) {
   const featured = filtered[0];
   const secondary = filtered.slice(1, 4);
   const latestFeed = filtered.slice(4);
-  const trending = posts.slice(0, 5);
+  const trending = posts.slice(0, 3);
   const related = featured ? getRelated(featured, posts) : [];
 
   return (
@@ -140,7 +140,7 @@ export default function BlogListClient({ posts }: { posts: BlogPostMeta[] }) {
       </div>
 
       <aside className="space-y-4">
-        <section className="border border-border bg-surface p-5 2xl:sticky 2xl:top-24">
+        <section className="surface-solid border border-border bg-surface p-5 2xl:sticky 2xl:top-24 2xl:z-10">
           <p className="font-display text-lg font-semibold text-text">Trending</p>
           <ul className="mt-3 space-y-3">
             {trending.map((post, index) => (
@@ -155,7 +155,7 @@ export default function BlogListClient({ posts }: { posts: BlogPostMeta[] }) {
           </ul>
         </section>
 
-        <section className="border border-border bg-surface p-5">
+        <section className="surface-solid border border-border bg-surface p-5">
           <p className="font-display text-lg font-semibold text-text">Categories</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {tags
