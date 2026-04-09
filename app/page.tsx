@@ -1,8 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getAllPostsMeta } from "@/lib/blog";
+import { projects } from "@/data/projects";
 
-const highlights = ["Node.js", "REST APIs", "PostgreSQL", "React", "Playwright", "System Design"];
+const highlightPriority = [
+  "Node.js",
+  "Express",
+  "Vue 3",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Playwright",
+  "PostgreSQL",
+  "React Native",
+  "JWT"
+];
+
+const highlights = highlightPriority
+  .filter((skill) => projects.some((project) => project.tech.includes(skill)))
+  .slice(0, 8);
+
 const currentFocus = [
   "Building backend-heavy systems with reliable API boundaries",
   "Improving Playwright stability and test-data strategy",
