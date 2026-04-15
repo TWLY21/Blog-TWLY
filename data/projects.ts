@@ -13,18 +13,6 @@ export type ProjectItem = {
 
 export const projects: ProjectItem[] = [
   {
-    id: "leave-system",
-    category: "Full-Stack Platform",
-    year: "2026",
-    title: "Leave Management System",
-    description:
-      "Production-oriented leave system with employee/admin workflows, RBAC, and a data-driven Playwright automation layer for scalable leave-rule validation.",
-    tech: ["Node.js", "Express", "Vue 3", "PostgreSQL", "SQLite", "Playwright", "GitHub Actions"],
-    role: "Designed API modules, role-based flows, and a maintainable Playwright framework (fixtures + flows + scenario data) with CI-ready structure.",
-    preview: "/covers/cover-1.svg",
-    github: "https://github.com/TWLY21/leave-system"
-  },
-  {
     id: "real-time-booking-notification-system",
     category: "Full-Stack Platform",
     year: "2026",
@@ -35,6 +23,18 @@ export const projects: ProjectItem[] = [
     role: "Implemented full-stack booking and notification flows, improved UX feedback loops, and refined validator reliability for production-style behavior.",
     preview: "/covers/cover-2.svg",
     github: "https://github.com/TWLY21/Real-Time-Booking-Notification-System"
+  },
+  {
+    id: "leave-system",
+    category: "Full-Stack Platform",
+    year: "2026",
+    title: "Leave Management System",
+    description:
+      "Production-oriented leave system with employee/admin workflows, RBAC, and a data-driven Playwright automation layer for scalable leave-rule validation.",
+    tech: ["Node.js", "Express", "Vue 3", "PostgreSQL", "SQLite", "Playwright", "GitHub Actions"],
+    role: "Designed API modules, role-based flows, and a maintainable Playwright framework (fixtures + flows + scenario data) with CI-ready structure.",
+    preview: "/covers/cover-1.svg",
+    github: "https://github.com/TWLY21/leave-system"
   },
   {
     id: "dev-toolbox",
