@@ -25,6 +25,30 @@ export const projects: ProjectItem[] = [
     github: "https://github.com/TWLY21/leave-system"
   },
   {
+    id: "real-time-booking-notification-system",
+    category: "Full-Stack Platform",
+    year: "2026",
+    title: "Real-Time Booking Notification System",
+    description:
+      "Real-time booking workflow platform with live notification handling, validation-first UI behavior, and management-facing operations.",
+    tech: ["Node.js", "Express", "Vue 3", "PostgreSQL", "WebSocket", "Validation", "GitHub Actions"],
+    role: "Implemented full-stack booking and notification flows, improved UX feedback loops, and refined validator reliability for production-style behavior.",
+    preview: "/covers/cover-2.svg",
+    github: "https://github.com/TWLY21/Real-Time-Booking-Notification-System"
+  },
+  {
+    id: "dev-toolbox",
+    category: "Developer Tooling",
+    year: "2026",
+    title: "Dev-Toolbox",
+    description:
+      "Engineering utility workspace focused on practical tooling workflows, cleaner UI presentation, and repeatable repository standards.",
+    tech: ["JavaScript", "Node.js", "GitHub Actions", "CI/CD", "Templates", "UI"],
+    role: "Improved usability and project consistency by introducing reusable templates, CI workflow automation, and structure polish.",
+    preview: "/covers/cover-3.svg",
+    github: "https://github.com/TWLY21/Dev-Toolbox"
+  },
+  {
     id: "mini-erp-system",
     category: "Business Systems",
     year: "2026",
@@ -78,12 +102,13 @@ export const projects: ProjectItem[] = [
     year: "2026",
     title: "Blog TWLY",
     description:
-      "Editorial-style portfolio blog for publishing engineering writeups and showcasing projects through a structured content system.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Markdown"],
-    role: "Designed and maintained the content architecture, project indexing flow, and editorial presentation.",
+      "Editorial-style portfolio blog for publishing engineering writeups, showcasing projects, and maintaining consistent repo-level delivery quality.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Markdown", "GitHub Actions"],
+    role: "Designed and maintained content architecture, project indexing flow, and CI/template consistency for reliable publishing updates.",
     preview: "/covers/cover-3.svg",
     github: "https://github.com/TWLY21/Blog-TWLY"
-  },  {
+  },
+  {
     id: "ai-bug-report-assistant",
     category: "AI Workflow Tool",
     year: "2026",
