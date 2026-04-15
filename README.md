@@ -1,4 +1,6 @@
-# Blog-TWLY
+﻿# Blog-TWLY
+
+[![CI](https://github.com/TWLY21/Blog-TWLY/actions/workflows/ci.yml/badge.svg)](https://github.com/TWLY21/Blog-TWLY/actions/workflows/ci.yml)
 
 Premium editorial-style portfolio blog built with Next.js App Router.
 
@@ -57,3 +59,4 @@ npx tsc --noEmit
 ## License
 
 MIT - see [LICENSE](./LICENSE).
+
